@@ -108,6 +108,9 @@
     <None Include="DemoCarouselView.UWP_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\foto1.jpg" />
+    <Content Include="Assets\foto2.jpg" />
+    <Content Include="Assets\foto3.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-100.png" />
     <Content Include="Assets\LockScreenLogo.scale-125.png" />

@@ -1,11 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:DemoCarouselView"
+             xmlns:forms="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"            
              x:Class="DemoCarouselView.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout>
+
+        <!--<forms:CarouselView x:Name="TextoCarouselView" VerticalOptions="CenterAndExpand">
+            <forms:CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <Label Text="{Binding .}"  FontSize="30" HorizontalTextAlignment="Center"/>
+                </DataTemplate>
+            </forms:CarouselView.ItemTemplate>
+        </forms:CarouselView> -->
+
+        <forms:CarouselView x:Name="ImageCarouselView" >
+            <forms:CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <Image Source="{Binding .}"/>
+                </DataTemplate>
+            </forms:CarouselView.ItemTemplate>
+        </forms:CarouselView>
+
+    </StackLayout>
 
 </ContentPage>
