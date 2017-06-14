@@ -13,7 +13,8 @@ namespace DemoCarouselView
         {
             InitializeComponent();
 
-            MainPage = new DemoCarouselView.MainPage();
+            MainPage = new MainPage();
+           // MainPage = new IndicadoresPage();
         }
 
         protected override void OnStart()

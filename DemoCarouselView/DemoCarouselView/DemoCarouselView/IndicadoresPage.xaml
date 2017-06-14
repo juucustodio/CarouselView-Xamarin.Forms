@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:local="clr-namespace:DemoCarouselView"
+             xmlns:forms="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemoCarouselView.IndicadoresPage">
+
+    <StackLayout>
+
+        <forms:CarouselView x:Name="ImageCarouselView" Position="{Binding Position, Mode=TwoWay}" ItemsSource="{Binding ListaImagens}" >
+            <forms:CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <Image Source="{Binding .}"/>
+                </DataTemplate>
+            </forms:CarouselView.ItemTemplate>
+        </forms:CarouselView>
+
+
+        <local:IndicadoresCarousel x:Name="Indicadores"  IndicatorHeight="16" IndicatorWidth="16" UnselectedIndicator="naoSelecionado.png" SelectedIndicator="selecionado.png" Position="{Binding Position}" ItemsSource="{Binding ListaImagens}" />
+
+    </StackLayout>
+</ContentPage>
